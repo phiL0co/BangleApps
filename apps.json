@@ -2131,17 +2131,3 @@
    ]
   }
 ]
-},
-{ "id": "wy-clock",
-  "name": "Weyland Yutani Watchface",
-  "shortName":"Weyland Yutani",
-  "icon": "app.png",
-  "version":"0.01",
-  "description": "This is a description of my awesome timer app",
-  "tags": "clock",
-  "storage": [
-    {"name":"wy-clock.app.js","url":"app.js"},
-    {"name":"wy-clock.img","url":"app-icon.js","evaluate":true}
-  ]
-}
-]
