@@ -194,18 +194,18 @@ exports.drawIcon = function(cond, x, y, r) {
   function chooseIcon(condition) {
     if (!condition) return () => {};
     condition = condition.toLowerCase();
-    if (condition.includes("thunderstorm")||condition.includes("Gewitter")) return drawThunderstorm;
-    if (condition.includes("freezing")||condition.includes("snow")||condition.includes("sleet")||condition.includes("Schnee")||condition.includes("Schneeregen")) {
+    if (condition.includes("thunderstorm")||condition.includes("gewitter")) return drawThunderstorm;
+    if (condition.includes("freezing")||condition.includes("snow")||condition.includes("sleet")||condition.includes("schnee")||condition.includes("schneeregen")) {
       return drawSnow;
     }
-    if (condition.includes("drizzle")||condition.includes("shower")||condition.includes("Niesel")||condition.includes("Schauer")) {
+    if (condition.includes("drizzle")||condition.includes("shower")||condition.includes("niesel")||condition.includes("schauer")) {
       return drawRain;
     }
-    if (condition.includes("rain")||condition.includes("Regen")) return drawShowerRain;
-    if (condition.includes("clear")||condition.includes("Klarer Himmel")) return drawSun;
-    if (condition.includes("few clouds")||condition.includes("Ein paar Wolken")) return drawFewClouds;
-    if (condition.includes("scattered clouds")||condition.includes("vereinzelte Wolken")) return drawCloud;
-    if (condition.includes("clouds")||condition.includes("Wolken")) return drawBrokenClouds;
+    if (condition.includes("rain")||condition.includes("regen")) return drawShowerRain;
+    if (condition.includes("clear")||condition.includes("klarer himmel")) return drawSun;
+    if (condition.includes("few clouds")||condition.includes("ein paar wolken")) return drawFewClouds;
+    if (condition.includes("scattered clouds")||condition.includes("vereinzelte wolken")) return drawCloud;
+    if (condition.includes("clouds")||condition.includes("wolken")) return drawBrokenClouds;
     return drawMist;
   }
 
