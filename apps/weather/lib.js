@@ -205,7 +205,8 @@ exports.drawIcon = function(cond, x, y, r) {
     }
     if (condition.includes("rain")) return drawShowerRain;
     if (condition.includes("clear")) return drawSun;
-    if (condition.includes("few clouds")) return drawFewClouds;
+    //if (condition.includes("few clouds")) return drawFewClouds;
+    if (condition.includes("paar Wolken")) return drawFewClouds;
     if (condition.includes("scattered clouds")) return drawCloud;
     if (condition.includes("clouds")) return drawBrokenClouds;
     return drawMist;
