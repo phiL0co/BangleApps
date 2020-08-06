@@ -51,7 +51,7 @@ setCurrentWeather(storage.readJSON('weather.json')||{});
 
 exports.drawIcon = function(cond, x, y, r) {
   function drawSun(x, y, r) {
-    g.setColor("#FF7700");
+    g.setColor("#FFD700");
     g.fillCircle(x, y, r);
   }
 
@@ -203,12 +203,11 @@ exports.drawIcon = function(cond, x, y, r) {
       condition.includes("shower")) {
       return drawRain;
     }
-    if (condition.includes("rain")) return drawShowerRain;
-    if (condition.includes("clear")) return drawSun;
-    //if (condition.includes("few clouds")) return drawFewClouds;
-    if (condition.includes("paar Wolken")) return drawFewClouds;
-    if (condition.includes("scattered clouds")) return drawCloud;
-    if (condition.includes("clouds")) return drawBrokenClouds;
+    if (condition.includes("rain"))||condition.includes("Regen") return drawShowerRain;
+    if (condition.includes("clear"))||condition.includes("Klar") return drawSun;
+    if (condition.includes("few clouds"))||condition.includes("paar Wolken") return drawFewClouds;
+    if (condition.includes("scattered clouds"))||condition.includes("vereinzelte Wolken") return drawCloud;
+    if (condition.includes("clouds"))||condition.includes("Wolken") return drawBrokenClouds;
     //return drawMist;
     return drawSun;
   }
