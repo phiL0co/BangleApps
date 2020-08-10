@@ -203,7 +203,7 @@ exports.drawIcon = function(cond, x, y, r) {
     }
     if (condition.includes("rain")||condition.includes("regen")) return drawShowerRain;
     if (condition.includes("clear")||condition.includes("klarer himmel")) return drawSun;
-    if (condition.includes("few clouds")||condition.includes("ein paar wolken")||condition.includes("aufgelockerte Bewölkung")) return drawFewClouds;
+    if (condition.includes("few clouds")||condition.includes("ein paar wolken")||condition.includes("aufgelockerte bewölkung")) return drawFewClouds;
     if (condition.includes("scattered clouds")||condition.includes("vereinzelte wolken")) return drawCloud;
     if (condition.includes("clouds")||condition.includes("wolken")) return drawBrokenClouds;
     return drawMist;
